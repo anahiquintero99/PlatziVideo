@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #fca3cc;
+  background-color: #fbbedf;
   font-family: 'Mulish', sans-serif;
 }
 
 .header {
-  background-color:#fca3cc;
+  background-color:#fbbedf;
   width: 100%;
   height: 80px;
   display: flex;
@@ -68,5 +68,31 @@ body {
 
 .header__menu--profile p {
   margin: 0px;
+  color: white;
+}
+
+.main {
+  height: 300px;
+}
+
+.main__title {
+  padding: 20px;
+  color: white;
+  font-size: 25px;
+}
+
+.input {
+  background-color:#fdcfdf;
+  border: 2px solid white;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+}
+
+::placeholder {
   color: white;
 }
