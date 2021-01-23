@@ -9,6 +9,8 @@ body {
   font-family: 'Mulish', sans-serif;
 }
 
+/* Navegador */
+
 .header {
   background-color:#fbbedf;
   width: 100%;
@@ -71,6 +73,7 @@ body {
   color: white;
 }
 
+/* Buscador */
 .main {
   height: 300px;
 }
@@ -96,3 +99,4 @@ body {
 ::placeholder {
   color: white;
 }
+
