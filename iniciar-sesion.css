@@ -1,12 +1,17 @@
+
+/* General */
 :root {
   --background-green: #21c08b;
+  --font-muli: 'Muli', sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: 'Muli', sans-serif;
+  font-family: var(--font-muli);
 }
 
+
+/* Header */
 .header {
   align-items: center;
   background-color: var(--background-green);
@@ -22,6 +27,8 @@ body {
   margin-left: 30px;
   width: 200px;
 }
+
+/* Log in */
 
 .login {
   background: linear-gradient(#21C08B, #AB88FF);
@@ -41,6 +48,9 @@ body {
   padding: 60px 68px 40px;
   min-height: 700px;
   width: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .login__container--form {
@@ -74,4 +84,92 @@ body {
   align-items: center;
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+.login__container--social-medial > div > img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.login__container--register {
+  font-size: 14px;
+}
+
+.login__container--register a{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.login__container--register a:hover{
+  text-decoration: underline;
+}
+
+.input {
+  background-color: transparent;
+  border-left: 0px;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 2px solid white;
+  font-family: var(--font-muli);
+  margin-bottom: 20px;
+  padding: 0px 20px;
+  outline: none;
+  height: 50px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-muli);
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+
+.footer {
+  background: #AB88FF;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+.footer a {
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  .login__container {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
